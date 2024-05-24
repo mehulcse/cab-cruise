@@ -35,10 +35,10 @@ export default function Header2() {
             <div className="header-logo">
               <Link className="d-flex" href="/">
                 <Image
-                  width={150}
-                  height={19}
+                  width={200}
+                  height={100}
                   alt="Luxride"
-                  src="/assets/imgs/template/logo-black.svg"
+                  src="/assets/imgs/template/logo.png"
                 />
               </Link>
             </div>

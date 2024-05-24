@@ -65,7 +65,7 @@ export default function Hero() {
                             aria-controls="tab-distance"
                             aria-selected="true"
                           >
-                            Distance
+                            Local Transfer
                           </a>
                         </li>
                         <li>
@@ -87,7 +87,7 @@ export default function Hero() {
                             aria-controls="tab-rate"
                             aria-selected="false"
                           >
-                            Flat Rate
+                            Outstation
                           </a>
                         </li>
                       </ul>

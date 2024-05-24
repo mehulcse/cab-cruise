@@ -32,9 +32,9 @@ export default function page() {
           <Features />
           <Facts />
           <Testimonials />
-          <Blogs />
-          {/* <div className="border-bottom"> */}
-          <Partners />
+          {/*<Blogs />*/}
+           <div className="border-bottom" />
+          {/*<Partners />*/}
           {/* </div> */}
         </main>
         <Footer9 />
