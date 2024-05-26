@@ -20,9 +20,15 @@ export default function Footer9() {
                 <div className="row">
                   <div className="col-lg-4 col-md-4 mb-30">
                     <span className="text-14 color-text-2">Address</span>
-                    <p className="text-18-medium color-text mt-5 address-footer">
-                      184 Main Collins Street West Victoria 8007
-                    </p>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.13192263717!2d72.26790527652712!3d23.020254059216793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1716730120367!5m2!1sen!2sin"
+                      width="600"
+                      height="450"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      className="w-100 h-50"
+                    ></iframe>
                   </div>
                   <div className="col-lg-4 col-md-4 mb-30">
                     <span className="text-14 color-text-2">Working Hours</span>
@@ -79,13 +85,13 @@ export default function Footer9() {
                   <span className="text-14 color-text mr-50">
                     © {new Date().getFullYear()} Luxride
                   </span>
-                  <ul className="menu-bottom">
+                  {/* <ul className="menu-bottom">
                     {legalLinks.map((elm, i) => (
                       <li key={i}>
                         <Link href={elm.href}>{elm.name}</Link>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
                 <div className="col-lg-4 col-md-12 text-center text-lg-end">
                   <a className="btn btn-link-location" href="#">

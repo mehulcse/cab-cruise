@@ -18,9 +18,9 @@ export default function Features() {
             </p>
           </div>
         </div>
-        <div className="row mt-50 justify-content-between">
+        <div className="row mt-50 text-center justify-content-between">
           {features2.map((elm, i) => (
-            <div key={i} className="col-lg-4 col-sm-6">
+            <div key={i} className="col-lg-4 col--6">
               <div className="cardImageText wow fadeInUp">
                 <div className="cardImage">
                   <Image width={70} height={70} src={elm.image} alt="luxride" />

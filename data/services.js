@@ -48,7 +48,7 @@ export const services4 = [
     id: 1,
     image: "/assets/imgs/page/homepage8/img2.png",
     alt: "luxride",
-    title: "Intercity Rides",
+    title: "corporate services",
     description:
       "The price of tickets for low-cost airlines for a specific route has a much larger spread than that of regular airlines. It depends on the time to departure, demand and competition on the route. Unlike regular airlines, low-cost airlines rarely offer cheap tickets more than 3 months before departure.",
   },
@@ -56,7 +56,7 @@ export const services4 = [
     id: 2,
     image: "/assets/imgs/page/homepage8/img2.png",
     alt: "luxride",
-    title: "Limousine service",
+    title: "Intercity Rides",
     description:
       "The price of tickets for low-cost airlines for a specific route has a much larger spread than that of regular airlines. It depends on the time to departure, demand and competition on the route. Unlike regular airlines, low-cost airlines rarely offer cheap tickets more than 3 months before departure.",
   },
@@ -64,7 +64,7 @@ export const services4 = [
     id: 3,
     image: "/assets/imgs/page/homepage8/img2.png",
     alt: "luxride",
-    title: "Chauffeur service",
+    title: "Airport Transfer",
     description:
       "The price of tickets for low-cost airlines for a specific route has a much larger spread than that of regular airlines. It depends on the time to departure, demand and competition on the route. Unlike regular airlines, low-cost airlines rarely offer cheap tickets more than 3 months before departure.",
   },
@@ -72,7 +72,7 @@ export const services4 = [
     id: 4,
     image: "/assets/imgs/page/homepage8/img2.png",
     alt: "luxride",
-    title: "Private car service",
+    title: "Local Rental",
     description:
       "The price of tickets for low-cost airlines for a specific route has a much larger spread than that of regular airlines. It depends on the time to departure, demand and competition on the route. Unlike regular airlines, low-cost airlines rarely offer cheap tickets more than 3 months before departure.",
   },

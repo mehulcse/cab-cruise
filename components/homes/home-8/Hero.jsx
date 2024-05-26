@@ -18,9 +18,9 @@ export default function Hero() {
             <div className="row align-items-center">
               <div className="col-lg-7">
                 <h2 className="heading-52-medium color-white mb-10 wow fadeInUp">
-                  Best Prices for Private
+                  Fast, Safe, Reliable
                   <br className="d-none d-lg-block" />
-                  Transfer
+                  Cab Service
                 </h2>
                 <p className="color-white text-16 wow fadeInUp">
                   Aliquam erat volutpat. Integer malesuada turpis id fringilla
