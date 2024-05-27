@@ -23,9 +23,9 @@ export default function Footer9() {
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7345.326147916644!2d72.65369874346692!3d22.99941394277758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e877ec94b5a89%3A0x8b81331c322e1168!2sMadhav%20Home!5e0!3m2!1sen!2sin!4v1716803905745!5m2!1sen!2sin"
                       width="300"
                       height="250"
-                      allowfullscreen=""
+                      allowFullScreen=""
                       loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
+                      referrerPolicy="no-referrer-when-downgrade"
                       className="rounded-3 mt-20 col-lg-12"
                     ></iframe>
                   </div>
@@ -118,8 +118,8 @@ export default function Footer9() {
                         y2="40.615"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop offset="0" stop-color="#2aa4f4" />
-                        <stop offset="1" stop-color="#007ad9" />
+                        <stop offset="0" stopColor="#2aa4f4" />
+                        <stop offset="1" stopColor="#007ad9" />
                       </linearGradient>
                       <path
                         fill="url(#Ld6sqrtcxMyckEl6xeDdMa)"
@@ -206,10 +206,10 @@ export default function Footer9() {
                         <path
                           fill="none"
                           stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeMiterlimit="10"
+                          strokeWidth="2"
                           d="M30,11H18c-3.9,0-7,3.1-7,7v12c0,3.9,3.1,7,7,7h12c3.9,0,7-3.1,7-7V18C37,14.1,33.9,11,30,11z"
                         />
                         <circle cx="31" cy="16" r="1" fill="#fff" />
@@ -221,10 +221,10 @@ export default function Footer9() {
                           r="6"
                           fill="none"
                           stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-miterlimit="10"
-                          stroke-width="2"
+                          strokeLinecap ="round"
+                          strokeLinejoin="round"
+                          strokeMiterlimit="10"
+                          strokeWidth="2"
                         />
                       </g>
                     </svg>
