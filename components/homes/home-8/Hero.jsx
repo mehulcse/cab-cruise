@@ -16,7 +16,7 @@ export default function Hero() {
         >
           <div className="container-sub">
             <div className="row align-items-center">
-              <div className="col-lg-7">
+              <div className="col-lg-6">
                 <h2 className="heading-52-medium color-white mb-10 wow fadeInUp">
                   Fast, Safe, Reliable
                   <br className="d-none d-lg-block" />

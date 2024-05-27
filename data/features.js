@@ -73,7 +73,7 @@ export const features5 = [
     alt: "luxride",
     title: "Safety First",
     description:
-      "Both you and your shipments will travel with professional drivers. Always with the highest quality standards.",
+      "Comprehensive safety standards ensure a safe and reliable transportation experience by rigorously selecting professional drivers and conducting regular vehicle inspections.",
   },
   {
     id: 2,
@@ -81,15 +81,15 @@ export const features5 = [
     alt: "luxride",
     title: "Prices With No Surprises",
     description:
-      "Both you and your shipments will travel with professional drivers. Always with the highest quality standards.",
+      "Indulge in Luxury: Experience Comfortable Rides with [Cab Company Name]. Relax and Unwind as You Travel in Style. Our Vehicles Ensure a Smooth Journey, Every Time. Elevate Your Commute Today",
   },
   {
     id: 3,
     src: "/assets/imgs/page/homepage7/vehicle.svg",
     alt: "luxride",
-    title: "Private Travel Solutions",
+    title: "Ride In Comfort",
     description:
-      "Both you and your shipments will travel with professional drivers. Always with the highest quality standards.",
+      "Experience Seamless Journeys: Ride in Comfort with [Cab Company Name]. Our Vehicles are Designed for Your Comfort and Convenience. Sit Back, Relax, and Enjoy the Ride. Travel in Style, Arrive Refreshed.",
   },
 ];
 export const features6 = [

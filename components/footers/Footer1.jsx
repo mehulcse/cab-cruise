@@ -159,7 +159,7 @@ export default function Footer1() {
                   © {new Date().getFullYear()} Luxride
                 </span>
                 <ul className="menu-bottom">
-                  {legalLinks.map((elm, i) => (
+                  {legalLinks?.map((elm, i) => (
                     <li key={i}>
                       <Link href={elm.href}>{elm.name}</Link>
                     </li>
