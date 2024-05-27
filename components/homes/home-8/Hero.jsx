@@ -11,7 +11,8 @@ export default function Hero() {
         <div
           className="box-cover-image boxBgImage"
           style={{
-            backgroundImage: "url(assets/imgs/page/homepage8/banner.png)",
+            backgroundImage:
+              "url(assets/imgs/page/homepage8/header-banner.png)",
           }}
         >
           <div className="container-sub">
@@ -28,7 +29,7 @@ export default function Hero() {
                   suscipit. Maecenas ultrices.
                 </p>
                 <div className="mt-30 wow fadeInUp">
-                  <Link className="btn btn-white-big" href="/fleet-list">
+                  <Link className="btn btn-white-big" href="#our-fleet">
                     View Our Fleet
                     <svg
                       className="icon-16"

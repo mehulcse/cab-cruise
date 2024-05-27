@@ -47,15 +47,15 @@ export default function Feet() {
     },
   };
   return (
-      <>
-          <div id="our-fleet" />
-    <section className="section box-our-fleet-home8" >
-      <div className="container-sub">
-        <div className="row align-items-center">
-          <div className="col-lg-6 col-7">
-            <h2 className="heading-44-medium wow fadeInUp">Our Fleet</h2>
-          </div>
-          <div className="col-lg-6 col-5 text-end">
+    <>
+      <div id="our-fleet" />
+      <section className="section box-our-fleet-home8">
+        <div className="container-sub">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-7">
+              <h2 className="heading-44-medium wow fadeInUp">Our Fleet</h2>
+            </div>
+            {/* <div className="col-lg-6 col-5 text-end">
             <Link
               className="text-16-medium color-primary wow fadeInUp"
               href="/fleet-list"
@@ -77,95 +77,95 @@ export default function Feet() {
                 ></path>
               </svg>
             </Link>
+          </div> */}
           </div>
-        </div>
-        <div className="box-slide-fleet-2 fleet-style-3 mt-50">
-          <div className="box-swiper">
-            <Swiper
-              {...swiperOptions}
-              style={{ overflow: "hidden" }}
-              className="swiper-container swiper-group-3-fleet pb-40"
-            >
-              {cars.map((elm, i) => (
-                <SwiperSlide key={i} className="swiper-slide">
-                  <div className="cardFleet wow fadeInUp">
-                    <div className="cardInfo">
-                      <Link href={`/fleet-single/${elm.id}`}>
-                        <h3 className="text-20-medium color-text mb-10">
-                          {elm.title}
-                        </h3>
-                      </Link>
-                      <p className="text-14 color-text mb-30">
-                        {elm.description}
-                      </p>
-                    </div>
-                    <div className="cardImage mb-30">
-                      <Link href={`/fleet-single/${elm.id}`}>
-                        <Image
-                          width={1530}
-                          height={711}
-                          src={elm.imgSrc}
-                          style={{ height: "fit-content" }}
-                          alt="Luxride"
-                        />
-                      </Link>
-                    </div>
-                    <div className="cardInfoBottom">
-                      <div className="passenger">
-                        <span className="icon-circle icon-passenger"></span>
-                        <span className="text-14">
-                          Passengers<span>{elm.passenger}</span>
-                        </span>
+          <div className="box-slide-fleet-2 fleet-style-3 mt-50">
+            <div className="box-swiper">
+              <Swiper
+                {...swiperOptions}
+                style={{ overflow: "hidden" }}
+                className="swiper-container swiper-group-3-fleet pb-40"
+              >
+                {cars.map((elm, i) => (
+                  <SwiperSlide key={i} className="swiper-slide">
+                    <div className="cardFleet wow fadeInUp">
+                      <div className="cardInfo">
+                        <Link href={`/fleet-single/${elm.id}`}>
+                          <h3 className="text-20-medium color-text mb-10">
+                            {elm.title}
+                          </h3>
+                        </Link>
+                        <p className="text-14 color-text mb-30">
+                          {elm.description}
+                        </p>
                       </div>
-                      <div className="luggage">
-                        <span className="icon-circle icon-luggage"></span>
-                        <span className="text-14">
-                          Luggage<span>{elm.luggage}</span>
-                        </span>
+                      <div className="cardImage mb-30">
+                        <Link href={`/fleet-single/${elm.id}`}>
+                          <Image
+                            width={1530}
+                            height={711}
+                            src={elm.imgSrc}
+                            style={{ height: "fit-content" }}
+                            alt="Luxride"
+                          />
+                        </Link>
+                      </div>
+                      <div className="cardInfoBottom">
+                        <div className="passenger">
+                          <span className="icon-circle icon-passenger"></span>
+                          <span className="text-14">
+                            Passengers<span>{elm.passenger}</span>
+                          </span>
+                        </div>
+                        <div className="luggage">
+                          <span className="icon-circle icon-luggage"></span>
+                          <span className="text-14">
+                            Luggage<span>{elm.luggage}</span>
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <div className="box-pagination-fleet">
-              <div className="swiper-button-prev swiper-button-prev-fleet snbp19">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                  ></path>
-                </svg>
-              </div>
-              <div className="swiper-button-next swiper-button-next-fleet snbn19">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  ></path>
-                </svg>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <div className="box-pagination-fleet">
+                <div className="swiper-button-prev swiper-button-prev-fleet snbp19">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                    ></path>
+                  </svg>
+                </div>
+                <div className="swiper-button-next swiper-button-next-fleet snbn19">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    ></path>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-        </>
+      </section>
+    </>
   );
 }
