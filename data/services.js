@@ -48,7 +48,7 @@ export const services4 = [
     id: 1,
     image: "/assets/imgs/page/homepage8/img2.png",
     alt: "luxride",
-    title: "Intercity Rides",
+    title: "Corporate Services",
     description:
       "The price of tickets for low-cost airlines for a specific route has a much larger spread than that of regular airlines. It depends on the time to departure, demand and competition on the route. Unlike regular airlines, low-cost airlines rarely offer cheap tickets more than 3 months before departure.",
   },
