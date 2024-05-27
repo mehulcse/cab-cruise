@@ -62,8 +62,8 @@ export default function Header2() {
                   +91 931 651 6448
                 </a>
                 <button className="ml-25 px-3 p-2 rounded-pill bg-warning border border">
-                  <a className="btn-link-globe text-black" href="#">
-                    Request Call Back
+                  <a className="btn-link-globe text-black" href="https://wa.me/+919316516448" target="_blank">
+                  Contact on whatsapp
                   </a>
                 </button>
               </div>
