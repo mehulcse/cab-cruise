@@ -33,7 +33,10 @@ export default function Services() {
     // },
   };
   return (
-    <section className="section box-intercity-home8 banner-homepage6" id="services">
+    <section
+      className="section box-intercity-home8 banner-homepage6"
+      id="services"
+    >
       <div className="container-fluid">
         <div className="box-slider-customers wow fadeInUp">
           <div className="box-swiper">
@@ -63,7 +66,7 @@ export default function Services() {
                           {elm.title.split(" ").slice(1).join(" ")}
                         </h3>
                         <p className="text-16 color-text">{elm.description}</p>
-                        <div className="mt-30">
+                        {/* <div className="mt-30">
                           <a className="btn btn-primary">
                             More Detail
                             <svg
@@ -82,7 +85,7 @@ export default function Services() {
                               ></path>
                             </svg>
                           </a>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

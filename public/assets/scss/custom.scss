@@ -265,6 +265,15 @@
 .searchLocations {
   color: #626262 !important;
 }
-.top-45{
+.fix-sizing {
+  width: 100%;
+  aspect-ratio: 3/2;
+  // object-fit: contain;
+}
+
+.how-it-work-image {
+  background-image: url(/assets/imgs/page/homepage1/how-work.png);
+}
+.top-45 {
   top: 45%;
 }

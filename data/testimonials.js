@@ -70,46 +70,30 @@ export const testimonials3 = [
   {
     id: 1,
     img: "/assets/imgs/page/homepage2/author.png",
-    name: "Jonathan Miller",
-    role: "Web Developer",
-    content: `We just had a bad experience with Redlane from
-                          Civitavecchia to our hotel in Rome so we gave Luxride
-                          a try for our ride from our hotel to the Airport. It
-                          was absolutely perfect. The booking was easy and I was
-                          able to make last minute changes.`,
+    name: "Deepak R",
+    // role: "Web Developer",
+    content: `FastRide has consistently provided excellent service. Whether it's an early morning airport run or a late-night pickup, they've always been reliable. The real-time tracking feature is fantastic, and I appreciate the professional attitude of the drivers.`,
   },
   {
     id: 2,
     img: "/assets/imgs/page/homepage2/author.png",
-    name: "Jonathan Miller",
-    role: "Web Developer",
-    content: `We just had a bad experience with Redlane from
-                          Civitavecchia to our hotel in Rome so we gave Luxride
-                          a try for our ride from our hotel to the Airport. It
-                          was absolutely perfect. The booking was easy and I was
-                          able to make last minute changes.`,
+    name: "Anjali P.",
+    // role: "Web Developer",
+    content: `CAB CRUISE has provided outstanding service every time I've used them. The drivers are always courteous, and the cars are in pristine condition. I appreciate the prompt service and the ease of booking through their app. Five stars!`,
   },
   {
     id: 3,
     img: "/assets/imgs/page/homepage2/author.png",
-    name: "Jonathan Miller",
-    role: "Web Developer",
-    content: `We just had a bad experience with Redlane from
-                          Civitavecchia to our hotel in Rome so we gave Luxride
-                          a try for our ride from our hotel to the Airport. It
-                          was absolutely perfect. The booking was easy and I was
-                          able to make last minute changes.`,
+    name: "Vikram S.",
+    // role: "Web Developer",
+    content: `I've tried many taxi services, but CAB CRUISE stands out for its reliability and professionalism. The drivers are knowledgeable and always take the quickest routes. The app is very convenient, and I love the upfront pricing feature. Great service overall!`,
   },
   {
     id: 4,
     img: "/assets/imgs/page/homepage2/author.png",
-    name: "Jonathan Miller",
-    role: "Web Developer",
-    content: `We just had a bad experience with Redlane from
-                          Civitavecchia to our hotel in Rome so we gave Luxride
-                          a try for our ride from our hotel to the Airport. It
-                          was absolutely perfect. The booking was easy and I was
-                          able to make last minute changes.`,
+    name: "Amit S.",
+    // role: "Web Developer",
+    content: `I use CAB CRUISE regularly, and their service is excellent. The drivers are friendly and professional, and the cars are always clean. The app is user-friendly, making it easy to book rides and make payments. Highly recommended!`,
   },
 ];
 

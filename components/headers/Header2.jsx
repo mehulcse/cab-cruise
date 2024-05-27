@@ -45,7 +45,21 @@ export default function Header2() {
             <div className="header-nav">
               <nav className="nav-main-menu d-none d-xl-block">
                 <ul className="main-menu">
-                  <Nav />
+                  <li>
+                    <Link href="#our-fleet">Our Fleet</Link>
+                  </li>
+                  <li>
+                    <Link href="#top-routes">Top Routes</Link>
+                  </li>
+                  <li>
+                    <Link href="#services">Our Services</Link>
+                  </li>
+                  <li>
+                    <Link href="#testimonials">Testimonials</Link>
+                  </li>
+                  <li>
+                    <Link href="#contact">Contact</Link>
+                  </li>
                 </ul>
               </nav>
               <div className="burger-icon burger-icon-white">
@@ -54,7 +68,8 @@ export default function Header2() {
               </div>
             </div>
             <div className="header-right">
-              <div className="d-none d-xxl-inline-block align-middle mr-10">
+              <div className="d-none d-xxl-inli
+              ne-block align-middle mr-10">
                 <a
                   className="text-14-medium call-phone color-white hover-up"
                   href="tel:+919316516448"

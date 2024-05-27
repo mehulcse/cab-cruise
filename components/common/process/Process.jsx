@@ -79,7 +79,7 @@ export default function Process() {
     nextArrow: <NextArrow />,
   };
   return (
-    <section className="section pt-120 pb-20 bg-primary bg-how-it-works">
+    <section className="section pt-120 pb-20 how-it-work-image bg-how-it-works">
       <div className="container-sub">
         <h2 className="heading-44-medium color-white mb-60 wow fadeInUp">
           How It Works
@@ -96,13 +96,13 @@ export default function Process() {
                 >
                   {process.map((elm, i) => (
                     <figure key={i}>
-                      <Image
+                      {/* <Image
                         width={1041}
                         height={689}
                         style={{ width: "fit-content", height: "fit-content" }}
                         src={elm.img}
                         alt="luxride"
-                      />
+                      /> */}
                     </figure>
                   ))}
                 </Slider>

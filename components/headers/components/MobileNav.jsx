@@ -2,14 +2,44 @@
 import { menuItems } from "@/data/menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function MobileNav() {
   const pathname = usePathname();
   const [parentOpen, setParentOpen] = useState(-1);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const closeSidebar = () => {
+    const navbarTrigger = document.getElementsByClassName("burger-icon")[0];
+    navbarTrigger?.click();
+    setIsSidebarOpen(false);
+  };
+
+  // useEffect(() => {
+  //   const sidebar = document.getElementById("h1")[0];
+  //   // const container = document.getElementsByClassName(
+  //   //   "mobile-header-active"
+  //   // )[0];
+  //   const wrapper4 = document.body;
+
+  //   const handleClick = (e) => {
+  //     console.log("first");
+
+  //     sidebar?.classList.toggle("burger-close");
+  //     e.preventDefault();
+  //     container?.classList.toggle("sidebar-visible");
+  //     wrapper4.classList.toggle("mobile-menu-active");
+  //   };
+
+  //   sidebar?.addEventListener("click", handleClick);
+
+  //   return () => {
+  //     sidebar?.removeEventListener("click", handleClick);
+  //   };
+  // }, []);
+
   return (
     <>
-      {menuItems.map((elm, i) => (
+      {/* {menuItems.map((elm, i) => (
         <li key={i} className="has-children">
           <a
             onClick={() => setParentOpen((pre) => (pre == i ? -1 : i))}
@@ -66,7 +96,64 @@ export default function MobileNav() {
         >
           Contact
         </Link>
-      </li>
+      </li> */}
+
+      <div className={``}>
+        <ul className="">
+          <li>
+            <Link
+              className={`${"/#our-fleet" == pathname ? "active-link" : ""}`}
+              style={{ fontSize: "20px" }}
+              href="/#our-fleet"
+              onClick={closeSidebar}
+              id="h1"
+            >
+              Our Fleet
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`${"/#top-routes" == pathname ? "active-link" : ""}`}
+              style={{ fontSize: "20px" }}
+              href="/#top-routes"
+              onClick={closeSidebar}
+              id="h1"
+            >
+              Top Routes
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`${"/#services" == pathname ? "active-link" : ""}`}
+              style={{ fontSize: "20px" }}
+              href="/#services"
+              onClick={closeSidebar}
+            >
+              Our Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`${"/#testimonials" == pathname ? "active-link" : ""}`}
+              style={{ fontSize: "20px" }}
+              href="/#testimonials"
+              onClick={closeSidebar}
+            >
+              Testimonials
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`${"/#contact" == pathname ? "active-link" : ""}`}
+              style={{ fontSize: "20px" }}
+              href="/#contact"
+              onClick={closeSidebar}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
     </>
   );
 }

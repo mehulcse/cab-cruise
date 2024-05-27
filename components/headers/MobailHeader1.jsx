@@ -25,6 +25,8 @@ export default function MobailHeader1() {
       navbarTrigger?.removeEventListener("click", handleClick);
     };
   }, []);
+
+  
   return (
     <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
       <div className="mobile-header-wrapper-inner">

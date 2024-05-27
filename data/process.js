@@ -3,22 +3,22 @@ export const process = [
     id: 1,
     title: "Create Your Route",
     description:
-      "Enter your pickup & dropoff locations or the number of hours you wish to book a car and driver for",
-    img: "/assets/imgs/page/homepage1/laptop.png",
+      "Specify your pickup and drop-off locations or the duration you need a car and driver.",
+    // img: "/assets/imgs/page/homepage1/laptop.png",
   },
   {
     id: 2,
-    title: "Choose Vehicle For You",
+    title: "Choose Your Vehicle",
     description:
-      "On the day of your ride, you will receive two email and SMS updates - one informing you that.",
-    img: "/assets/imgs/page/homepage1/desktop.png",
+      "On the day of your ride, you'll receive updates via call and SMS about your ride status.",
+    // img: "/assets/imgs/page/homepage1/desktop.png",
   },
   {
     id: 3,
-    title: "Enjoy The Journey",
+    title: "Enjoy Your Journey",
     description:
-      "After your ride has taken place, we would appreciate it if you could rate your car and driver.",
-    img: "/assets/imgs/page/homepage1/desktop2.png",
+      "After your ride, please take a moment to rate your car and driver.",
+    // img: "/assets/imgs/page/homepage1/desktop2.png",
   },
 ];
 
