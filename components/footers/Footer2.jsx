@@ -149,13 +149,13 @@ export default function Footer2() {
                 <span className="text-14 color-white mr-50">
                   © {new Date().getFullYear()} Luxride
                 </span>
-                <ul className="menu-bottom">
+               <ul className="menu-bottom">
                   {legalLinks.map((elm, i) => (
                     <li key={i}>
                       <Link href={elm.href}>{elm.name}</Link>
                     </li>
                   ))}
-                </ul>
+                </ul> 
               </div>
               <div className="col-lg-4 col-md-12 text-center text-lg-end">
                 <a className="btn btn-link-location" href="#">

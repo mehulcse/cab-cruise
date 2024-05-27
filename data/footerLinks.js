@@ -50,9 +50,9 @@ export const links4 = [
   { id: 3, name: "XL", href: "#" },
   { id: 4, name: "Assistant", href: "#" },
 ];
-// export const legalLinks = [
-//   { id: 1, name: "Terms", href: "/about" },
-//   { id: 2, name: "Privacy policy", href: "/about" },
-//   { id: 3, name: "Legal notice", href: "/about" },
-//   { id: 4, name: "Accessibility", href: "/about" },
-// ];
+export const legalLinks = [
+  { id: 1, name: "Terms", href: "/about" },
+  { id: 2, name: "Privacy policy", href: "/about" },
+  { id: 3, name: "Legal notice", href: "/about" },
+  { id: 4, name: "Accessibility", href: "/about" },
+];
