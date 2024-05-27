@@ -22,12 +22,12 @@ export const socialMediaPlatforms = [
 
 export const links1 = [
   { id: 1, text: "About us", href: "/about" },
-  { id: 2, text: "Our offerings", href: "/fleet-list" },
-  { id: 3, text: "Newsroom", href: "/blog-grid" },
-  { id: 4, text: "Investors", href: "/our-team" },
-  { id: 5, text: "Blog", href: "/blog-grid" },
-  { id: 6, text: "Careers", href: "#" },
-  { id: 7, text: "Gift cards", href: "#" },
+  { id: 2, text: "Our Fleet", href: "#our-fleet" },
+  { id: 3, text: "Top Routes", href: "#top-routes" },
+  { id: 4, text: "Our Services", href: "#services" },
+  // { id: 5, text: "Blog", href: "/blog-grid" },
+  // { id: 6, text: "Careers", href: "#" },
+  // { id: 7, text: "Gift cards", href: "#" },
 ];
 export const links2 = [
   { id: 1, name: "New York", href: "#" },
@@ -50,9 +50,9 @@ export const links4 = [
   { id: 3, name: "XL", href: "#" },
   { id: 4, name: "Assistant", href: "#" },
 ];
-export const legalLinks = [
-  { id: 1, name: "Terms", href: "/about" },
-  { id: 2, name: "Privacy policy", href: "/about" },
-  { id: 3, name: "Legal notice", href: "/about" },
-  { id: 4, name: "Accessibility", href: "/about" },
-];
+// export const legalLinks = [
+//   { id: 1, name: "Terms", href: "/about" },
+//   { id: 2, name: "Privacy policy", href: "/about" },
+//   { id: 3, name: "Legal notice", href: "/about" },
+//   { id: 4, name: "Accessibility", href: "/about" },
+// ];

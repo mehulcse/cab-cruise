@@ -85,7 +85,7 @@ export default function Cities() {
               className="swiper-container swiper-group-4-fleet pb-0"
             >
               {citiesData.map((elm, i) => (
-                <SwiperSlide key={i} className="swiper-slide">
+                <SwiperSlide key={i} className="swiper-slide text-center">
                   <div className="cardCities wow fadeInUp">
                     <div className="cardImage">
                       <Image
