@@ -100,27 +100,26 @@ export default function Feet() {
                         </p>
                       </div>
                       <div className="cardImage mb-30">
-                        <Link href={`/fleet-single/${elm.id}`}>
-                          <Image
-                            width={1530}
-                            height={711}
-                            src={elm.imgSrc}
-                            style={{ height: "fit-content" }}
-                            alt="Luxride"
-                          />
-                        </Link>
+                        <Image
+                          width={1530}
+                          height={711}
+                          src={elm.imgSrc}
+                          style={{ height: "fit-content" }}
+                          alt="Luxride"
+                          className="fix-sizing"
+                        />
                       </div>
                       <div className="cardInfoBottom">
                         <div className="passenger">
                           <span className="icon-circle icon-passenger"></span>
                           <span className="text-14">
-                            Passengers<span>{elm.passenger}</span>
+                            Passengers<span> {elm.passenger}</span>
                           </span>
                         </div>
                         <div className="luggage">
                           <span className="icon-circle icon-luggage"></span>
                           <span className="text-14">
-                            Luggage<span>{elm.luggage}</span>
+                            Luggage<span> {elm.luggage}</span>
                           </span>
                         </div>
                       </div>

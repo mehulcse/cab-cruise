@@ -10,18 +10,18 @@ export default function Testimonials() {
     <section className="section box-testimonials-home8" id="testimonials">
       <div className="container-sub">
         <div className="row align-items-center">
-          <div className="col-lg-5 col-md-6 mb-30">
+          {/* <div className="col-lg-5 col-md-6 mb-30">
             <div className="box-customers-images">
               <Image
                 width={900}
                 height={930}
                 style={{ height: "fit-content" }}
-                src="/assets/imgs/page/homepage8/img1.png"
+                src="/assets/imgs/page/homepage8/testimonial.jpg"
                 alt="luxride"
               />
             </div>
-          </div>
-          <div className="col-lg-7 col-md-6 mb-30">
+          </div> */}
+          <div className="col-lg-7 col-md-6 mb-30 w-75">
             <div className="box-swiper">
               <Swiper
                 slidesPerView={1}
@@ -44,7 +44,7 @@ export default function Testimonials() {
                 autoplay={{
                   delay: 10000,
                 }}
-                className="swiper-container swiper-group-testimonials-fraction pb-0"
+                // className="swiper-container swiper-group-testimonials-fraction pb-0"
               >
                 {testimonials3.map((elm, i) => (
                   <SwiperSlide key={i} className="swiper-slide">

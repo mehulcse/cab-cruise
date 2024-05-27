@@ -46,15 +46,15 @@ export const services2 = [
 export const services4 = [
   {
     id: 1,
-    image: "/assets/imgs/page/homepage8/img2.png",
+    image: "/assets/imgs/page/homepage8/corporate-service.jpg",
     alt: "luxride",
-    title: "Corporate Services",
+    title: "Intercity Rides",
     description:
       "The price of tickets for low-cost airlines for a specific route has a much larger spread than that of regular airlines. It depends on the time to departure, demand and competition on the route. Unlike regular airlines, low-cost airlines rarely offer cheap tickets more than 3 months before departure.",
   },
   {
     id: 2,
-    image: "/assets/imgs/page/homepage8/img2.png",
+    image: "/assets/imgs/page/homepage8/intercity-rides.jpg",
     alt: "luxride",
     title: "Limousine service",
     description:
@@ -62,7 +62,7 @@ export const services4 = [
   },
   {
     id: 3,
-    image: "/assets/imgs/page/homepage8/img2.png",
+    image: "/assets/imgs/page/homepage8/airport-services.jpg",
     alt: "luxride",
     title: "Chauffeur service",
     description:
@@ -70,7 +70,7 @@ export const services4 = [
   },
   {
     id: 4,
-    image: "/assets/imgs/page/homepage8/img2.png",
+    image: "/assets/imgs/page/homepage8/local-mentar.jpg",
     alt: "luxride",
     title: "Private car service",
     description:

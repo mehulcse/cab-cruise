@@ -53,7 +53,7 @@ export default function Cities() {
           <div className="col-lg-6 col-sm-7 col-7">
             <h2 className="heading-44-medium wow fadeInUp">Top Routes</h2>
           </div>
-          <div className="col-lg-6 col-sm-5 col-5 text-end">
+          {/* <div className="col-lg-6 col-sm-5 col-5 text-end">
             <a
               className="text-16-medium color-primary d-flex align-items-center justify-content-end wow fadeInUp"
               href="#"
@@ -75,7 +75,7 @@ export default function Cities() {
                 ></path>
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="box-slide-fleet-2 mt-50">
           <div className="box-swiper">
@@ -88,15 +88,14 @@ export default function Cities() {
                 <SwiperSlide key={i} className="swiper-slide">
                   <div className="cardCities wow fadeInUp">
                     <div className="cardImage">
-                      <a href="#">
-                        <Image
-                          width={810}
-                          height={810}
-                          src={elm.imgSrc}
-                          style={{ height: "fit-content" }}
-                          alt="Luxride"
-                        />
-                      </a>
+                      <Image
+                        width={810}
+                        height={810}
+                        src={elm.imgSrc}
+                        style={{ height: "fit-content" }}
+                        alt="Luxride"
+                        className="fix-sizing"
+                      />
                     </div>
                     <div className="cardInfo">
                       <a href="#">
