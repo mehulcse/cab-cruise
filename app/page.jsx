@@ -13,7 +13,7 @@ import Testimonials from "@/components/homes/home-8/Testimonials";
 import Icons from "@/components/icons/icons";
 
 export const metadata = {
-  title: "CAR CRUISE",
+  title: "CAB CRUISE",
   description:
     "Book premium cab and car rental services with Lixride. Experience reliable, luxurious transportation with our chauffeur-driven limousines and car hire options, perfect for all your travel needs.",
   keywords: [

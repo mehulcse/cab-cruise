@@ -98,11 +98,7 @@ export default function Cities() {
                       />
                     </div>
                     <div className="cardInfo">
-                      <a href="#">
-                        <h3 className="cardTitle color-text">
-                          {elm.routeCount}
-                        </h3>
-                      </a>
+                      <h3 className="cardTitle color-text">{elm.routeCount}</h3>
                       <p className="cardDesc color-text">{elm.cityName}</p>
                     </div>
                   </div>

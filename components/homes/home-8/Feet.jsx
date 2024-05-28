@@ -90,11 +90,9 @@ export default function Feet() {
                   <SwiperSlide key={i} className="swiper-slide">
                     <div className="cardFleet wow fadeInUp">
                       <div className="cardInfo">
-                        <Link href={`/fleet-single/${elm.id}`}>
-                          <h3 className="text-20-medium color-text mb-10">
-                            {elm.title}
-                          </h3>
-                        </Link>
+                        <h3 className="text-20-medium color-text mb-10">
+                          {elm.title}
+                        </h3>
                         <p className="text-14 color-text mb-30">
                           {elm.description}
                         </p>
