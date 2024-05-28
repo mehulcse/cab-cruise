@@ -114,7 +114,7 @@ export default function Hero() {
                             <div className="search-icon">
                               <span className="item-icon icon-time"> </span>
                             </div>
-                            <div className="search-inputs ">
+                            <div className="search-inputs">
                               <label className="text-14 color-grey">Time</label>
                               <TimePickerComponent />
                             </div>
@@ -148,16 +148,23 @@ export default function Hero() {
                             </div>
                           </div>
                           <div className="search-item search-button mb-0 d-flex gap-4">
-                            <button className="btn btn-search" type="submit">
-                              <a href="#" className="text-white">
+                            <a
+                              href="tel:+919316516448"
+                              className="text-white h-100 w-100"
+                            >
+                              <button className="btn btn-search" type="submit">
                                 Call
-                              </a>
-                            </button>
-                            <button className="btn btn-search" type="submit">
-                              <a href="#" className="text-white">
+                              </button>
+                            </a>
+                            <a
+                              href="https://wa.me/+919316516448"
+                              target="_blank"
+                              className="text-white h-100 w-100"
+                            >
+                              <button className="btn btn-search" type="submit">
                                 Whatsapp
-                              </a>
-                            </button>
+                              </button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -191,30 +198,44 @@ export default function Hero() {
                               <span className="item-icon icon-from"> </span>
                             </div>
                             <div className="search-inputs">
-                              <label className="text-14 color-grey">From</label>
-                              <PlacePicker />
+                              <input
+                                type="text"
+                                className="border-0 bg-transparent w-100"
+                                placeholder="From"
+                              />
                             </div>
                           </div>
                           <div className="search-item search-to">
                             <div className="search-icon">
-                              <span className="item-icon icon-to"> </span>
+                              <span className="item-icon icon-time"> </span>
                             </div>
                             <div className="search-inputs">
-                              <label className="text-14 color-grey">To</label>
-                              <PlacePicker />
+                              {/* <label className="text-14 color-grey">To</label> */}
+                              <input
+                                type="text"
+                                className="border-0 bg-transparent w-100"
+                                placeholder="Number Of Hour"
+                              />
                             </div>
                           </div>
                           <div className="search-item search-button mb-0 d-flex gap-4">
-                            <button className="btn btn-search" type="submit">
-                              <a href="#" className="text-white">
+                            <a
+                              href="tel:+919316516448"
+                              className="text-white h-100 w-100"
+                            >
+                              <button className="btn btn-search" type="submit">
                                 Call
-                              </a>
-                            </button>
-                            <button className="btn btn-search" type="submit">
-                              <a href="#" className="text-white">
+                              </button>
+                            </a>
+                            <a
+                              href="https://wa.me/+919316516448"
+                              target="_blank"
+                              className="text-white h-100 w-100"
+                            >
+                              <button className="btn btn-search" type="submit">
                                 Whatsapp
-                              </a>
-                            </button>
+                              </button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -248,8 +269,11 @@ export default function Hero() {
                               <span className="item-icon icon-from"> </span>
                             </div>
                             <div className="search-inputs">
-                              <label className="text-14 color-grey">From</label>
-                              <PlacePicker />
+                              <input
+                                type="text"
+                                className="border-0 bg-transparent w-100"
+                                placeholder="Form"
+                              />
                             </div>
                           </div>
                           <div className="search-item search-to">
@@ -257,21 +281,31 @@ export default function Hero() {
                               <span className="item-icon icon-to"> </span>
                             </div>
                             <div className="search-inputs">
-                              <label className="text-14 color-grey">To</label>
-                              <PlacePicker />
+                              <input
+                                type="text"
+                                className="border-0 bg-transparent w-100"
+                                placeholder="To"
+                              />
                             </div>
                           </div>
                           <div className="search-item search-button mb-0 d-flex gap-4">
-                            <button className="btn btn-search" type="submit">
-                              <a href="#" className="text-white">
+                            <a
+                              href="tel:+919316516448"
+                              className="text-white h-100 w-100"
+                            >
+                              <button className="btn btn-search" type="submit">
                                 Call
-                              </a>
-                            </button>
-                            <button className="btn btn-search" type="submit">
-                              <a href="#" className="text-white">
+                              </button>
+                            </a>
+                            <a
+                              href="https://wa.me/+919316516448"
+                              target="_blank"
+                              className="text-white h-100 w-100"
+                            >
+                              <button className="btn btn-search" type="submit">
                                 Whatsapp
-                              </a>
-                            </button>
+                              </button>
+                            </a>
                           </div>
                         </div>
                       </div>
