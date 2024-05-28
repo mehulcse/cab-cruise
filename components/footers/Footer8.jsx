@@ -33,7 +33,7 @@ export default function Footer9() {
                     <div className="">
                       <span className="text-14 color-text-2">Address</span>
                       <p className="text-18-medium color-text mt-5 address-footer">
-                        T-401,Madhav homes Galaxy road, vastral Ahmedabad 382418
+                        T-401, Madhav homes Galaxy road, vastral Ahmedabad 382418
                       </p>
                     </div>
                     <div className="">
@@ -46,18 +46,23 @@ export default function Footer9() {
                         Sun: Closed
                       </p>
                     </div>
-                    <div className="">
+                    <div className="mb-20">
                       <span className="text-14 color-text-2">
                         Call Our Office
                       </span>
                       <p className="text-18-medium color-text mt-5 call-footer">
-                        +91 931 651 6448
+                        <a
+                          className="text-14-medium pl-0 call-phone hover-up"
+                          href="tel:+919316516448"
+                        >
+                          +91 931 651 6448
+                        </a>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-2 wow fadeInUp mt-md-5 mt-lg-0">
+              <div className="col-lg-2 wow fadeInUp">
                 <div className="row">
                   <div className="">
                     <h5 className="text-18-medium color-text mb-20">Company</h5>
@@ -221,7 +226,7 @@ export default function Footer9() {
                           r="6"
                           fill="none"
                           stroke="#fff"
-                          strokeLinecap ="round"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
                           strokeWidth="2"

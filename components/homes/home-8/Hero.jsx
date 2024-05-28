@@ -106,7 +106,7 @@ export default function Hero() {
                               <span className="item-icon icon-date"> </span>
                             </div>
                             <div className="search-inputs ">
-                              <label className="text-14 color-grey">Date</label>
+                              {/* <label className="text-14 color-grey">Date</label> */}
                               <DatePickerComponent />
                             </div>
                           </div>
@@ -124,8 +124,13 @@ export default function Hero() {
                               <span className="item-icon icon-from"> </span>
                             </div>
                             <div className="search-inputs">
-                              <label className="text-14 color-grey">From</label>
-                              <PlacePicker />
+                              {/* <label className="text-14 color-grey">From</label> */}
+                              {/* <PlacePicker /> */}
+                              <input
+                                type="text"
+                                className="border-0 bg-transparent w-100"
+                                placeholder="From"
+                              />
                             </div>
                           </div>
                           <div className="search-item search-to">
@@ -133,19 +138,25 @@ export default function Hero() {
                               <span className="item-icon icon-to"> </span>
                             </div>
                             <div className="search-inputs">
-                              <label className="text-14 color-grey">To</label>
-                              <PlacePicker />
+                              {/* <label className="text-14 color-grey">To</label> */}
+                              {/* <PlacePicker /> */}
+                              <input
+                                type="text"
+                                className="border-0 bg-transparent w-100"
+                                placeholder="To"
+                              />
                             </div>
                           </div>
-                          <div className="search-item search-button mb-0">
+                          <div className="search-item search-button mb-0 d-flex gap-4">
                             <button className="btn btn-search" type="submit">
-                              <Image
-                                width={20}
-                                height={20}
-                                src="/assets/imgs/template/icons/search.svg"
-                                alt="luxride"
-                              />
-                              Search
+                              <a href="#" className="text-white">
+                                Call
+                              </a>
+                            </button>
+                            <button className="btn btn-search" type="submit">
+                              <a href="#" className="text-white">
+                                Whatsapp
+                              </a>
                             </button>
                           </div>
                         </div>
@@ -193,15 +204,16 @@ export default function Hero() {
                               <PlacePicker />
                             </div>
                           </div>
-                          <div className="search-item search-button mb-0">
+                          <div className="search-item search-button mb-0 d-flex gap-4">
                             <button className="btn btn-search" type="submit">
-                              <Image
-                                width={20}
-                                height={20}
-                                src="/assets/imgs/template/icons/search.svg"
-                                alt="luxride"
-                              />
-                              Search
+                              <a href="#" className="text-white">
+                                Call
+                              </a>
+                            </button>
+                            <button className="btn btn-search" type="submit">
+                              <a href="#" className="text-white">
+                                Whatsapp
+                              </a>
                             </button>
                           </div>
                         </div>
@@ -249,15 +261,16 @@ export default function Hero() {
                               <PlacePicker />
                             </div>
                           </div>
-                          <div className="search-item search-button mb-0">
+                          <div className="search-item search-button mb-0 d-flex gap-4">
                             <button className="btn btn-search" type="submit">
-                              <Image
-                                width={20}
-                                height={20}
-                                src="/assets/imgs/template/icons/search.svg"
-                                alt="luxride"
-                              />
-                              Search
+                              <a href="#" className="text-white">
+                                Call
+                              </a>
+                            </button>
+                            <button className="btn btn-search" type="submit">
+                              <a href="#" className="text-white">
+                                Whatsapp
+                              </a>
                             </button>
                           </div>
                         </div>
