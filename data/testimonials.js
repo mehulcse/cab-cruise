@@ -72,7 +72,7 @@ export const testimonials3 = [
     img: "/assets/imgs/page/homepage2/author.png",
     name: "Deepak R",
     // role: "Web Developer",
-    content: `FastRide has consistently provided excellent service. Whether it's an early morning airport run or a late-night pickup, they've always been reliable. The real-time tracking feature is fantastic, and I appreciate the professional attitude of the drivers.`,
+    content: `CAB CRUISE has consistently provided excellent service. Whether it's an early morning airport run or a late-night pickup, they've always been reliable. The real-time tracking feature is fantastic, and I appreciate the professional attitude of the drivers.`,
   },
   {
     id: 2,

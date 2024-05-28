@@ -25,7 +25,7 @@ export var features2 = [
   {
     id: 1,
     image: "/assets/imgs/page/homepage4/limo.svg",
-    text: "Luxury Limousine Selection",
+    text: "Luxury Selection",
     desc: "Both you and your shipments will travel with professional drivers.",
   },
   {
@@ -49,7 +49,7 @@ export var features2 = [
   {
     id: 5,
     image: "/assets/imgs/page/homepage4/price.svg",
-    text: "Fixed Price & Bonus System",
+    text: "Fixed Price",
     desc: "Both you and your shipments will travel with professional drivers.",
   },
   {
@@ -73,7 +73,7 @@ export const features5 = [
     alt: "luxride",
     title: "Safety First",
     description:
-      "Comprehensive safety standards ensure a safe and reliable transportation experience by rigorously selecting professional drivers and conducting regular vehicle inspections.",
+      "'Safety First' means prioritizing advanced safety features and rigorous testing to ensure every journey is secure and worry-free. We are committed to protecting you and your loved ones with the latest in automotive safety technology.",
   },
   {
     id: 2,
@@ -81,7 +81,7 @@ export const features5 = [
     alt: "luxride",
     title: "Prices With No Surprises",
     description:
-      "Indulge in Luxury: Experience Comfortable Rides with [Cab Company Name]. Relax and Unwind as You Travel in Style. Our Vehicles Ensure a Smooth Journey, Every Time. Elevate Your Commute Today",
+      "Enjoy transparent pricing with our 'Prices With No Surprises' policy, ensuring no hidden fees or unexpected costs. What you see is what you pay, making your car buying experience stress-free and straightforward.",
   },
   {
     id: 3,
@@ -89,7 +89,7 @@ export const features5 = [
     alt: "luxride",
     title: "Ride In Comfort",
     description:
-      "Experience Seamless Journeys: Ride in Comfort with [Cab Company Name]. Our Vehicles are Designed for Your Comfort and Convenience. Sit Back, Relax, and Enjoy the Ride. Travel in Style, Arrive Refreshed.",
+      "Experience ultimate relaxation with our 'Ride In Comfort' promise, featuring luxurious interiors, advanced suspension systems, and ergonomic seating. Enjoy every journey with unparalleled comfort and a smooth, effortless drive",
   },
 ];
 export const features6 = [

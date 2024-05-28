@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Icons() {
   return (
-    <div className="d-flex flex-column position-fixed top-45 end-0 bg-white rounded-3 gap-2 py-2">
+    <div className="d-flex flex-column position-fixed z-i-2 top-45 end-0 bg-white rounded-3 gap-2 py-2">
       <a className="" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -6,17 +6,17 @@ export default function Features() {
     <section className="section bg-white pt-120">
       <div className="container-sub">
         <div className="row align-items-center">
-          <div className="col-lg-6 mb-30">
+          <div className="col mb-30">
             <h2 className="heading-44-medium color-text wow fadeInUp">
               We make sure that your every trip is comfortable
             </h2>
           </div>
-          <div className="col-lg-6 mb-30">
+          {/* <div className="col-lg-6 mb-30">
             <p className="text-16 color-text wow fadeInUp">
               Aliquam erat volutpat. Integer malesuada turpis id fringilla
               suscipit. Maecenas ultrices.
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="row mt-50 text-center justify-content-between">
           {features2.map((elm, i) => (
