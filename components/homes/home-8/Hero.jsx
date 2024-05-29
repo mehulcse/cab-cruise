@@ -3,6 +3,7 @@
 import DatePickerComponent from "@/components/common/DatePicker";
 import TimePickerComponent from "@/components/common/TimePicker";
 import Link from "next/link";
+import { Controller } from "react-hook-form";
 import { useForm } from "react-hook-form";
 
 export default function Hero() {
@@ -141,9 +142,17 @@ export default function Hero() {
                                 <span className="item-icon icon-date"> </span>
                               </div>
                               <div className="search-inputs">
-                                <DatePickerComponent
+                                <Controller
                                   name="date"
                                   control={form1.control}
+                                  render={({ field: { onChange, value } }) => (
+                                    <DatePickerComponent
+                                      onChange={onChange}
+                                      value={value}
+                                      // name="date"
+                                      // control={form2.control}
+                                    />
+                                  )}
                                 />
                               </div>
                             </div>
@@ -155,9 +164,15 @@ export default function Hero() {
                                 <label className="text-14 color-grey">
                                   Time
                                 </label>
-                                <TimePickerComponent
+                                <Controller
                                   name="time"
                                   control={form1.control}
+                                  render={({ field: { onChange, value } }) => (
+                                    <TimePickerComponent
+                                      onChange={onChange}
+                                      value={value}
+                                    />
+                                  )}
                                 />
                               </div>
                             </div>
@@ -226,9 +241,15 @@ export default function Hero() {
                                 <label className="text-14 color-grey">
                                   Time
                                 </label>
-                                <TimePickerComponent
+                                <Controller
                                   name="time"
                                   control={form2.control}
+                                  render={({ field: { onChange, value } }) => (
+                                    <TimePickerComponent
+                                      onChange={onChange}
+                                      value={value}
+                                    />
+                                  )}
                                 />
                               </div>
                             </div>
@@ -240,9 +261,15 @@ export default function Hero() {
                                 <label className="text-14 color-grey">
                                   Date
                                 </label>
-                                <DatePickerComponent
+                                <Controller
                                   name="date"
                                   control={form2.control}
+                                  render={({ field: { onChange, value } }) => (
+                                    <DatePickerComponent
+                                      onChange={onChange}
+                                      value={value}
+                                    />
+                                  )}
                                 />
                               </div>
                             </div>
@@ -311,9 +338,15 @@ export default function Hero() {
                                 <label className="text-14 color-grey">
                                   Date
                                 </label>
-                                <DatePickerComponent
+                                <Controller
                                   name="date"
                                   control={form3.control}
+                                  render={({ field: { onChange, value } }) => (
+                                    <DatePickerComponent
+                                      onChange={onChange}
+                                      value={value}
+                                    />
+                                  )}
                                 />
                               </div>
                             </div>
@@ -325,9 +358,15 @@ export default function Hero() {
                                 <label className="text-14 color-grey">
                                   Time
                                 </label>
-                                <TimePickerComponent
+                                <Controller
                                   name="time"
                                   control={form3.control}
+                                  render={({ field: { onChange, value } }) => (
+                                    <TimePickerComponent
+                                      onChange={onChange}
+                                      value={value}
+                                    />
+                                  )}
                                 />
                               </div>
                             </div>
