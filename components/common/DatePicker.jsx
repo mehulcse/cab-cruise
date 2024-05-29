@@ -1,9 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import DatePicker from "react-multi-date-picker";
+import { Controller } from "react-hook-form";
 
-export default function DatePickerComponent() {
-  const [value, setValue] = useState(new Date());
-
-  return <DatePicker format="MMMM DD YYYY" value={value} onChange={setValue} />;
+export default function DatePickerComponent({ value, onChange }) {
+  return (
+    // <Controller
+    //   name={name}
+    //   control={control}
+    //   render={({ field: { onChange, value } }) => (
+    <DatePicker format="MMMM DD YYYY" value={value} onChange={onChange} />
+    //   )}
+    // />
+  );
 }
