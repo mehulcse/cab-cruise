@@ -12,6 +12,17 @@ export const cars = [
   },
   {
     id: 2,
+    imgSrc: "/assets/imgs/page/homepage1/disire.jpg",
+    title: "Desire",
+    // description: "Mercedes-Benz V-Class, Chevrolet Suburban, Cadillac",
+    passenger: 4,
+    luggage: 3,
+    price: 1300,
+    carType: "Sedan",
+    brand: "Suzuki",
+  },
+  {
+    id: 3,
     imgSrc: "/assets/imgs/page/homepage1/ertiga-bg.png",
     title: "Ertiga",
     // description: "Mercedes-Benz EQS, BMW 7 Series, Audi A8 or similar",
@@ -21,17 +32,7 @@ export const cars = [
     carType: "SUV",
     brand: "Suzuki",
   },
-  {
-    id: 3,
-    imgSrc: "/assets/imgs/page/homepage1/disire.jpg",
-    title: "Desire",
-    // description: "Mercedes-Benz V-Class, Chevrolet Suburban, Cadillac",
-    passenger: 4,
-    luggage: 3,
-    price: 1300,
-    carType: "Sedan",
-    brand: "Audi",
-  },
+
   {
     id: 4,
     imgSrc: "/assets/imgs/page/homepage1/innova-crysta.jpg",

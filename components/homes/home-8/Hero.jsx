@@ -1,10 +1,43 @@
+"use client";
+
 import DatePickerComponent from "@/components/common/DatePicker";
-import PlacePicker from "@/components/common/PlacePicker";
 import TimePickerComponent from "@/components/common/TimePicker";
-import Image from "next/image";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
 
 export default function Hero() {
+  const form1 = useForm({
+    defaultValues: {
+      date: new Date(),
+      time: new Date(),
+    },
+  });
+  const form2 = useForm({
+    defaultValues: {
+      date: new Date(),
+      time: new Date(),
+    },
+  });
+  const form3 = useForm({
+    defaultValues: {
+      date: new Date(),
+      time: new Date(),
+    },
+  });
+
+  const onSubmit = (data) => {
+    const message = `Cab Booking Query: Date:${data?.date}, Time:${
+      data?.time
+    }, From:${data?.from}${!data?.to ? "" : `, To: ${data?.to}`}${
+      !data?.hours ? "" : `, Hours: ${data?.hours}`
+    }`;
+    const url = `https://wa.me/+919316516448?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="section banner-home8">
       <div className="box-banner-homepage-8">
@@ -24,9 +57,10 @@ export default function Hero() {
                   Cab Service
                 </h2>
                 <p className="color-white text-16 wow fadeInUp">
-                  Aliquam erat volutpat. Integer malesuada turpis id fringilla
+                  Experience seamless travel with our cab service. Enjoy prompt
+                  pickups,
                   <br className="d-none d-lg-block" />
-                  suscipit. Maecenas ultrices.
+                  safe journeys, dependable service every time you book with us.
                 </p>
                 <div className="mt-30 wow fadeInUp">
                   <Link className="btn btn-white-big" href="#our-fleet">
@@ -100,73 +134,81 @@ export default function Hero() {
                         role="tabpanel"
                         aria-labelledby="tab-distance"
                       >
-                        <div className="box-form-search">
-                          <div className="search-item search-date">
-                            <div className="search-icon">
-                              <span className="item-icon icon-date"> </span>
+                        <form onSubmit={form1.handleSubmit(onSubmit)}>
+                          <div className="box-form-search">
+                            <div className="search-item search-date">
+                              <div className="search-icon">
+                                <span className="item-icon icon-date"> </span>
+                              </div>
+                              <div className="search-inputs">
+                                <DatePickerComponent
+                                  name="date"
+                                  control={form1.control}
+                                />
+                              </div>
                             </div>
-                            <div className="search-inputs ">
-                              {/* <label className="text-14 color-grey">Date</label> */}
-                              <DatePickerComponent />
+                            <div className="search-item search-time">
+                              <div className="search-icon">
+                                <span className="item-icon icon-time"> </span>
+                              </div>
+                              <div className="search-inputs">
+                                <label className="text-14 color-grey">
+                                  Time
+                                </label>
+                                <TimePickerComponent
+                                  name="time"
+                                  control={form1.control}
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div className="search-item search-time">
-                            <div className="search-icon">
-                              <span className="item-icon icon-time"> </span>
+                            <div className="search-item search-from">
+                              <div className="search-icon">
+                                <span className="item-icon icon-from"> </span>
+                              </div>
+                              <div className="search-inputs">
+                                <input
+                                  {...form1.register("from", {
+                                    required: true,
+                                  })}
+                                  type="text"
+                                  name="from"
+                                  className="border-0 bg-transparent w-100"
+                                  placeholder="From"
+                                />
+                              </div>
                             </div>
-                            <div className="search-inputs">
-                              <label className="text-14 color-grey">Time</label>
-                              <TimePickerComponent />
+                            <div className="search-item search-to">
+                              <div className="search-icon">
+                                <span className="item-icon icon-to"> </span>
+                              </div>
+                              <div className="search-inputs">
+                                <input
+                                  {...form1.register("to", { required: true })}
+                                  type="text"
+                                  name="to"
+                                  className="border-0 bg-transparent w-100"
+                                  placeholder="To"
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div className="search-item search-from">
-                            <div className="search-icon">
-                              <span className="item-icon icon-from"> </span>
-                            </div>
-                            <div className="search-inputs">
-                              {/* <label className="text-14 color-grey">From</label> */}
-                              {/* <PlacePicker /> */}
-                              <input
-                                type="text"
-                                className="border-0 bg-transparent w-100"
-                                placeholder="From"
-                              />
-                            </div>
-                          </div>
-                          <div className="search-item search-to">
-                            <div className="search-icon">
-                              <span className="item-icon icon-to"> </span>
-                            </div>
-                            <div className="search-inputs">
-                              {/* <label className="text-14 color-grey">To</label> */}
-                              {/* <PlacePicker /> */}
-                              <input
-                                type="text"
-                                className="border-0 bg-transparent w-100"
-                                placeholder="To"
-                              />
-                            </div>
-                          </div>
-                          <div className="search-item search-button mb-0 d-flex gap-4">
-                            <a
-                              href="tel:+919316516448"
-                              className="text-white h-100 w-100"
-                            >
-                              <button className="btn btn-search" type="submit">
-                                Call
+                            <div className="search-item search-button mb-0 d-flex gap-4">
+                              <a
+                                href="tel:+919316516448"
+                                className="text-white h-100 w-100"
+                              >
+                                <button
+                                  className="btn btn-search"
+                                  type="submit"
+                                >
+                                  Call
+                                </button>
+                              </a>
+                              <button type="submit" className="btn btn-search">
+                                WhatsApp
                               </button>
-                            </a>
-                            <a
-                              href="https://wa.me/+919316516448"
-                              target="_blank"
-                              className="text-white h-100 w-100"
-                            >
-                              <button className="btn btn-search" type="submit">
-                                Whatsapp
-                              </button>
-                            </a>
+                            </div>
                           </div>
-                        </div>
+                        </form>
                       </div>
                       <div
                         className="tab-pane fade"
@@ -174,70 +216,84 @@ export default function Hero() {
                         role="tabpanel"
                         aria-labelledby="tab-hourly"
                       >
-                        <div className="box-form-search">
-                          <div className="search-item search-time">
-                            <div className="search-icon">
-                              <span className="item-icon icon-time"> </span>
+                        <form onSubmit={form2.handleSubmit(onSubmit)}>
+                          <div className="box-form-search">
+                            <div className="search-item search-time">
+                              <div className="search-icon">
+                                <span className="item-icon icon-time"> </span>
+                              </div>
+                              <div className="search-inputs ">
+                                <label className="text-14 color-grey">
+                                  Time
+                                </label>
+                                <TimePickerComponent
+                                  name="time"
+                                  control={form2.control}
+                                />
+                              </div>
                             </div>
-                            <div className="search-inputs ">
-                              <label className="text-14 color-grey">Time</label>
-                              <TimePickerComponent />
+                            <div className="search-item search-date">
+                              <div className="search-icon">
+                                <span className="item-icon icon-date"> </span>
+                              </div>
+                              <div className="search-inputs ">
+                                <label className="text-14 color-grey">
+                                  Date
+                                </label>
+                                <DatePickerComponent
+                                  name="date"
+                                  control={form2.control}
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div className="search-item search-date">
-                            <div className="search-icon">
-                              <span className="item-icon icon-date"> </span>
+                            <div className="search-item search-from">
+                              <div className="search-icon">
+                                <span className="item-icon icon-from"> </span>
+                              </div>
+                              <div className="search-inputs">
+                                <input
+                                  {...form2.register("from", {
+                                    required: true,
+                                  })}
+                                  type="text"
+                                  className="border-0 bg-transparent w-100"
+                                  placeholder="From"
+                                />
+                              </div>
                             </div>
-                            <div className="search-inputs ">
-                              <label className="text-14 color-grey">Date</label>
-                              <DatePickerComponent />
+                            <div className="search-item search-to">
+                              <div className="search-icon">
+                                <span className="item-icon icon-time"> </span>
+                              </div>
+                              <div className="search-inputs">
+                                <input
+                                  type="text"
+                                  {...form2.register("hours", {
+                                    required: true,
+                                  })}
+                                  className="border-0 bg-transparent w-100"
+                                  placeholder="Number Of Hours"
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div className="search-item search-from">
-                            <div className="search-icon">
-                              <span className="item-icon icon-from"> </span>
-                            </div>
-                            <div className="search-inputs">
-                              <input
-                                type="text"
-                                className="border-0 bg-transparent w-100"
-                                placeholder="From"
-                              />
-                            </div>
-                          </div>
-                          <div className="search-item search-to">
-                            <div className="search-icon">
-                              <span className="item-icon icon-time"> </span>
-                            </div>
-                            <div className="search-inputs">
-                              {/* <label className="text-14 color-grey">To</label> */}
-                              <input
-                                type="text"
-                                className="border-0 bg-transparent w-100"
-                                placeholder="Number Of Hour"
-                              />
-                            </div>
-                          </div>
-                          <div className="search-item search-button mb-0 d-flex gap-4">
-                            <a
-                              href="tel:+919316516448"
-                              className="text-white h-100 w-100"
-                            >
-                              <button className="btn btn-search" type="submit">
-                                Call
+                            <div className="search-item search-button mb-0 d-flex gap-4">
+                              <a
+                                href="tel:+919316516448"
+                                className="text-white h-100 w-100"
+                              >
+                                <button
+                                  className="btn btn-search"
+                                  type="submit"
+                                >
+                                  Call
+                                </button>
+                              </a>
+                              <button type="submit" className="btn btn-search">
+                                WhatsApp
                               </button>
-                            </a>
-                            <a
-                              href="https://wa.me/+919316516448"
-                              target="_blank"
-                              className="text-white h-100 w-100"
-                            >
-                              <button className="btn btn-search" type="submit">
-                                Whatsapp
-                              </button>
-                            </a>
+                            </div>
                           </div>
-                        </div>
+                        </form>
                       </div>
                       <div
                         className="tab-pane fade"
@@ -245,69 +301,82 @@ export default function Hero() {
                         role="tabpanel"
                         aria-labelledby="tab-rate"
                       >
-                        <div className="box-form-search">
-                          <div className="search-item search-date">
-                            <div className="search-icon">
-                              <span className="item-icon icon-date"> </span>
+                        <form onSubmit={form3.handleSubmit(onSubmit)}>
+                          <div className="box-form-search">
+                            <div className="search-item search-date">
+                              <div className="search-icon">
+                                <span className="item-icon icon-date"> </span>
+                              </div>
+                              <div className="search-inputs ">
+                                <label className="text-14 color-grey">
+                                  Date
+                                </label>
+                                <DatePickerComponent
+                                  name="date"
+                                  control={form3.control}
+                                />
+                              </div>
                             </div>
-                            <div className="search-inputs ">
-                              <label className="text-14 color-grey">Date</label>
-                              <DatePickerComponent />
+                            <div className="search-item search-time">
+                              <div className="search-icon">
+                                <span className="item-icon icon-time"> </span>
+                              </div>
+                              <div className="search-inputs ">
+                                <label className="text-14 color-grey">
+                                  Time
+                                </label>
+                                <TimePickerComponent
+                                  name="time"
+                                  control={form3.control}
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div className="search-item search-time">
-                            <div className="search-icon">
-                              <span className="item-icon icon-time"> </span>
+                            <div className="search-item search-from">
+                              <div className="search-icon">
+                                <span className="item-icon icon-from"> </span>
+                              </div>
+                              <div className="search-inputs">
+                                <input
+                                  {...form3.register("from", {
+                                    required: true,
+                                  })}
+                                  type="text"
+                                  className="border-0 bg-transparent w-100"
+                                  placeholder="From"
+                                />
+                              </div>
                             </div>
-                            <div className="search-inputs ">
-                              <label className="text-14 color-grey">Time</label>
-                              <TimePickerComponent />
+                            <div className="search-item search-to">
+                              <div className="search-icon">
+                                <span className="item-icon icon-to"> </span>
+                              </div>
+                              <div className="search-inputs">
+                                <input
+                                  {...form3.register("to", { required: true })}
+                                  type="text"
+                                  className="border-0 bg-transparent w-100"
+                                  placeholder="To"
+                                />
+                              </div>
                             </div>
-                          </div>
-                          <div className="search-item search-from">
-                            <div className="search-icon">
-                              <span className="item-icon icon-from"> </span>
-                            </div>
-                            <div className="search-inputs">
-                              <input
-                                type="text"
-                                className="border-0 bg-transparent w-100"
-                                placeholder="Form"
-                              />
-                            </div>
-                          </div>
-                          <div className="search-item search-to">
-                            <div className="search-icon">
-                              <span className="item-icon icon-to"> </span>
-                            </div>
-                            <div className="search-inputs">
-                              <input
-                                type="text"
-                                className="border-0 bg-transparent w-100"
-                                placeholder="To"
-                              />
-                            </div>
-                          </div>
-                          <div className="search-item search-button mb-0 d-flex gap-4">
-                            <a
-                              href="tel:+919316516448"
-                              className="text-white h-100 w-100"
-                            >
-                              <button className="btn btn-search" type="submit">
-                                Call
+                            <div className="search-item search-button mb-0 d-flex gap-4">
+                              <a
+                                href="tel:+919316516448"
+                                className="text-white h-100 w-100"
+                              >
+                                <button
+                                  className="btn btn-search"
+                                  type="submit"
+                                >
+                                  Call
+                                </button>
+                              </a>
+                              <button type="submit" className="btn btn-search">
+                                WhatsApp
                               </button>
-                            </a>
-                            <a
-                              href="https://wa.me/+919316516448"
-                              target="_blank"
-                              className="text-white h-100 w-100"
-                            >
-                              <button className="btn btn-search" type="submit">
-                                Whatsapp
-                              </button>
-                            </a>
+                            </div>
                           </div>
-                        </div>
+                        </form>
                       </div>
                     </div>
                   </div>
